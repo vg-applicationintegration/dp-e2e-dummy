@@ -1,0 +1,8 @@
+# deploy-portal e2e dummy stack — an OWN throwaway app (never a customer stack).
+services:
+  web:
+    image: nginx:1.27-alpine
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
